@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF ELSE</title>
+</head>
+<body>
+    <input type="text" name="txt" id="txt">
+    <button type="submit" onclick="change()">Verificar</button>
+    <div id="res"></div>
+
+    <script>
+        function change() {
+            var texto = document.getElementById('txt').value
+            var result = document.getElementById('res')
+            if (texto == 'a' || texto == 'e' || texto == 'i' || texto == 'o' || texto == 'u' ) {
+                result.innerText = 'Vogal'
+            }
+            else {
+                result.innerText = 'consoante'
+            }
+        }
+    </script>
+</body>
+</html>

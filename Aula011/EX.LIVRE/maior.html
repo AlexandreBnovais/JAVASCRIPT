@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="n1" id="n1">
+    <input type="text" name="n2" id="n2">
+    <input type="text" name="n3" id="n3">
+    <button type="submit" onclick="checar()">checar</button>
+    
+    <script>
+        function checar() {
+            var num1 = Number(document.getElementById('n1').value)
+            var num2 = Number(document.getElementById('n2').value)
+            var num3 = Number(document.getElementById('n3').value)
+
+            var maior = num1
+            if (num2 > maior) {
+                maior = num2
+            }
+            else if (num2 < num3) {
+                maior = num3
+            }
+            
+            window.document.write(`O Maior numero e: ${maior}`)
+        }
+    </script>
+</body>
+</html>

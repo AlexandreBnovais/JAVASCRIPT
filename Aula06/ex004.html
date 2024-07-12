@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 26pt sans-serif;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // var nome = window.prompt('Digite seu nome: ')
+        // document.write(`Olá ${nome}! seu nome tem ${nome.length}<br>`)
+        // document.write(`Olá ${nome}! seu nome em letra maiuscula e: ${nome.toUpperCase()} <br>`)
+        // document.write(`Olá ${nome}! seu nome em letra minuscula: ${nome.toLowerCase()}`)
+
+        var nome = 'Alexandre'
+        var n1 = Number(window.prompt('DIgite sua renda atual: '))
+        var n2 = 100
+        var soma = n1 + n2
+        // window.alert(`Sua renda mensal é: ${soma.toLocaleString('pt-BR' , {style: 'currency' , currency: 'BRL'})}`)
+        
+        document.write(`Olá ${nome}! sua renda mensal e: ${soma.toLocaleString('pt-BR' , {style: 'currency' , currency: 'BRL'})}`)
+    </script>
+</body>
+</html>

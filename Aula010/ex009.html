@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D</title>
+</head>
+<body>
+   <input type="number" name="txtvel" id="txtvel">km/h
+   <input type="button" value="verificar" onclick="calcular()">
+   <div id="ress">
+
+   </div>
+
+   <script>
+    function calcular() {
+        var txtv = window.document.querySelector('input#txtvel')
+        var res = window.document.querySelector('div#ress')
+        var vel = Number(txtv.value)
+
+        res.innerHTML = `A sua velocidade atual é de ${vel} <br>`
+        res.innerHTML += `Dirija sempre com cuidado`
+
+        if (vel > 60) {
+            res.innerHTML = `A sua velocidade atual é de ${vel} km/h <br>`
+            res.innerHTML += 'Voce esta acima da velocidade permitida <strong>Multado</strong>'
+        }else {
+            res.innerHTML = `A sua velocidade atual é de ${vel}km/h <br>`
+            res.innerHTML += 'Mantenha Sempre a segurança'
+        }
+    }
+   </script>
+</body>
+</html>

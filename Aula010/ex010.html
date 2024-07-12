@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <input type="text" name="txtv" id="txtv">
+    <input type="button" value="dados" onclick="mostrar()">
+    <p id="res"></p>
+
+    <script>
+        function mostrar() {
+            var tvtv = document.getElementById('txtv').value
+            var res = document.querySelector('p#res')
+            
+            if (tvtv == 'brasileiro') {
+                res.innerHTML = `Voce e brasileiro`
+            }else {
+                res.innerHTML = 'Voce e estrangeiro'
+            }
+
+            
+        }
+    </script>
+</body>
+</html>

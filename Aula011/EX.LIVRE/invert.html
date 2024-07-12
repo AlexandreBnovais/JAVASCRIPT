@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="num1" id="n1">
+    <input type="text" name="num2" id="n2">
+    <button type="submit" onclick="trocar()">Inverter</button>
+
+    <script>
+        function trocar() {
+            var num1 = Number(document.getElementById('n1').value)
+            var num2 = Number(document.getElementById('n2').value)
+            var aux1 = num1
+            var aux2 = num2
+
+            num1 = aux2
+            num2 = aux1
+            
+            alert(`Numero1: ${aux1} + ${aux2}
+            O inverso do Numero e: ${num1} + ${num2}`)}
+    </script>
+</body>
+</html>
